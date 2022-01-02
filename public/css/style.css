@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+    background-color: #C8E6C9;
+
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    padding: 1rem; 
+    position: relative;
+}
+
+.card{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FBE7;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding-left: 5rem;
+    position: relative;
+    margin-bottom: 1rem;  
+}
+.com{
+    max-width: 700px;
+    margin-left: 100px;
+}
+.card-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+.img,.name,.date{
+   width: 200px;
+    font-size: 1.2rem;
+}
+.name{
+    font-weight: bold;
+}
+
+.img img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+.delete{
+   color: red; 
+   margin-left: 1rem;
+}
+.reply:hover{
+   background-color: aquamarine;
+}
+.delete:hover{
+   background-color: red;
+    color: #fff;
+}
+.fa-level-up-alt{
+    transform: rotate(-90deg);
+    margin-right: 0.5rem;
+}
+.cunter{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   left: 10px;
+    width: 40px;
+    height: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ddd; 
+}
+.cunter .plus,.cunter .minus{
+    cursor: pointer;
+}
+.card-body{
+    padding: 0.5rem;
+   
+}
+.add{
+position: absolute;
+bottom: 1rem;
+right: 5rem;
+}
+.add a{
+    border: solid 1px #eee;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.add a:hover{
+    background-color: rgb(177, 224, 177);
+}
+@media screen and (max-width: 810px){
+    .card{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 3rem;
+    }
+    .card-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img,.name,.date{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .img img{
+        width: 50px;
+        height: 50px;
+    }
+    .btn{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .com{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .card-body{
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .add{
+        right:50%;
+        top: 2%;
+        transform: translateX(50%);
+    }
+    .add a{
+        border: solid 1px #eee;
+        padding: 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+        transition: 0.5s;
+    }
+    .add a:hover{
+        background-color: rgb(177, 224, 177);
+    }
+}
